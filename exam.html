@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal PvP TW</title>
+    <style>
+        /* 設定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* 導覽列 */
+        .navbar {
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Logo */
+        .nav-logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* 選單項目群組 */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        /* 選單連結超連結 */
+        .nav-link {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* 滑鼠懸停效果 */
+        .nav-link:hover {
+            background-color: #34495e;
+            color: #1abc9c;
+        }
+
+        /* 網頁主內容區 */
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            line-height: 1.6;
+        }
+
+        /* 手機版響應式斷點 (RWD) */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 15px;
+                display: none; /* 預設展開，若要作漢堡選單需加 JS，這裡先採標準垂直排列 */
+            }
+
+            /* 手機垂直 */
+            .navbar {
+                align-items: center;
+            }
+            .nav-menu {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .nav-item {
+                margin: 8px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">
+
+            <span>Crystal PvP TW</span>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="home.html" class="nav-link">首頁</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">關於我們</a></li>
+            <li class="nav-item"><a href="exam.html" class="nav-link">考試評級</a></li>
+            <li class="nav-item"><a href="servo.html" class="nav-link">我們的伺服器</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">聯絡我們</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>歡迎光臨我們的網站</h2>
+        <p>考試</p>
+    </div>
+</body>
+</html>
